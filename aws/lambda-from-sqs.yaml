@@ -1,0 +1,63 @@
+# For more info: https://medium.com/@zaccharles/reproducing-the-sqs-trigger-and-lambda-concurrency-limit-issue-f4c09d384a18
+
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: Experiment to understand the redrive behaviour of SQS
+Resources:
+  SqsLambdaFunction:
+    Type: AWS::Lambda::Function
+    Properties:
+      Description: A lambda function that runs for 30 seconds
+      Runtime: nodejs8.10
+      Timeout: 40
+      ReservedConcurrentExecutions: 1
+      Role: !GetAtt SqsLambdaFunctionRole.Arn
+      Code: 
+        ZipFile: |
+          // sleep the function for 5 seconds
+          function sleep (time) {
+            return new Promise((resolve) => setTimeout(resolve, time));
+          }
+          exports.handler = async (event) => {
+              console.log('Function start');
+              console.log(event);
+              await sleep(30000);
+              console.log('Function finish');
+          };
+      Handler: index.handler
+
+  SqsLambdaFunctionRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+          -
+            Effect: "Allow"
+            Principal:
+              Service:
+                - "lambda.amazonaws.com" 
+            Action: 
+              - "sts:AssumeRole"
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/AWSLambdaExecute
+        - arn:aws:iam::aws:policy/service-role/AWSLambdaSQSQueueExecutionRole
+
+  ThrottleSqsQueue:
+    Type: AWS::SQS::Queue
+    Properties:
+      VisibilityTimeout: 120
+      RedrivePolicy:
+        deadLetterTargetArn: !GetAtt ThrottleSqsQueueDlq.Arn
+        maxReceiveCount: 1
+
+  ThrottleSqsQueueDlq:
+    Type: AWS::SQS::Queue
+
+  SqlLambdaEventSourceMapping:
+    Type: AWS::Lambda::EventSourceMapping
+    Properties: 
+      BatchSize: 1
+      Enabled: true
+      EventSourceArn: !GetAtt ThrottleSqsQueue.Arn
+      FunctionName: !Ref SqsLambdaFunction

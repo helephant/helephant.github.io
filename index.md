@@ -2,6 +2,7 @@
 Hi, I'm Helen. I'm a software architect, based in London who is currently working for [Photobox](https://photobox.co.uk). 
 
 ## Current musings
+
 Coming soon..
 
 ## Things I've built
