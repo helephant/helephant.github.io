@@ -1,7 +1,7 @@
 # Expand-contract pattern
 
 ## Intent
-Expand-contract is a pattern for [evolving APIs](evolving-apis.md) while temporarily maintaining backwards compatibility for existing clients. 
+Expand-contract is a pattern for [evolving APIs](evolving-service-apis.md) while temporarily maintaining backwards compatibility for existing clients. 
 
 __Also known as__: Parallel change
 

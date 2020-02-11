@@ -11,18 +11,21 @@ How your audience change how you will evolve
 
 What pattern is graphql?
 
+Versioning:
 * [Semantic versioning](semantic-versioning.md)
+* [W3C paper on versioning](https://www.w3.org/2001/tag/doc/versioning)
 * How to ask for a version
 * How to specify a version
 
 Getting design right
 * Messages not objects
 * Share vocabularies not models
+* Share contracts, not types
 
 https://stripe.com/gb/blog/api-versioning
 
 ## Evolving APIs
-* Non-breaking changes
+* Non-breaking changes - backward and forward compatibility
 * Supporting multiple versions
 * Deprecating things - sunset period
 * Aggressive obsolescence
@@ -35,9 +38,13 @@ https://stripe.com/gb/blog/api-versioning
 * Version in header
 * Content negotiation
 
-## API tests
-* Contract tests (https://martinfowler.com/bliki/ContractTest.html)
-* PACT testing
+## Something Consumer-Service contracts
+* Schemas
+* [Specification by example](https://www.thoughtworks.com/insights/blog/specification-example)
+* [Consumer-driven contract tests](consumer-driven-contract-tests.md)
+* Pact testing
+* Integration tests
+* Integration contract tests
 
 
 ## Client patterns

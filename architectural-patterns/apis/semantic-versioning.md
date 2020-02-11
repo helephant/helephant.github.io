@@ -1,7 +1,7 @@
 # Semantic versioning
 
 ## Intent
-Semantic versioning is a convention to set expectations around how backwards compatibile new versions of an API will be. It is a useful convention when [evolving apis](evolving-apis.md). 
+Semantic versioning is a convention to set expectations around how backwards compatibile new versions of an API will be. It is a useful convention when publishing code packages or [evolving service APIs](evolving-service-apis.md). 
 
 ## Motivation
 
@@ -53,3 +53,4 @@ It is also particularly important when the producer's code changes regularly or 
 
 ## Useful resources
 * [The SemVer website](https://semver.org/)
+* [Semantic versioning on NPM](https://docs.npmjs.com/about-semantic-versioning)
