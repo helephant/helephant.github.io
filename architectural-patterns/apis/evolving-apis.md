@@ -11,7 +11,7 @@ How your audience change how you will evolve
 
 What pattern is graphql?
 
-* Semantic versioning
+* [Semantic versioning](semantic-versioning.md)
 * How to ask for a version
 * How to specify a version
 
@@ -37,6 +37,7 @@ https://stripe.com/gb/blog/api-versioning
 
 ## API tests
 * Contract tests (https://martinfowler.com/bliki/ContractTest.html)
+* PACT testing
 
 
 ## Client patterns
