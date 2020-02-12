@@ -37,6 +37,6 @@ Another thing that is a wider issue than consumer driven contract tests is they 
 * A description of the pattern on [Martin Fowler's website](https://martinfowler.com/articles/consumerDrivenContracts.html)
 * Consumer-driven contracts on the [thoughtworks tech radar](https://www.thoughtworks.com/radar/techniques/consumer-driven-contract-testing)
 * [Introduction to consumer-driven contract testing](https://medium.com/kreuzwerker-gmbh/introduction-to-consumer-driven-contract-testing-3a130c8c2ea0)
-* [Verifying microservice integration with contract testing](https://www.youtube.com/watch?v=-6x6XBDf9sQ)
 * [Pact](https://docs.pact.io/#consumer-driven-contracts) - a tool for automating consumer-driven contracts
+* [Verifying microservice integration with contract testing](https://www.youtube.com/watch?v=-6x6XBDf9sQ) - a great introduction to consumer-driven contracts and pact that very clearly explains the problems
 * [Pact nirvana](https://docs.google.com/document/d/e/2PACX-1vRf1kSDccImNipOOm1G-bjcSs-ifbZjf1v54K-dIcq8BLKeFPAAm_bf_p71UKqkRMIx30QWWL-kN8TI/pub)
