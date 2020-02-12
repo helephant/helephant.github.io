@@ -13,32 +13,25 @@ Consumer-driven contracts allow the service to be tested in isolation to the con
 
 ## Pattern
 
-A consumer-driven contract is .... 
-
-It can optionally be expressed as a set of tests that belong to the service which ensure that the service will continue to meet its commitment to that client as the service evolves, or could be expressed in other ways such as documentation. 
-
+A consumer-driven contract testing is a set of automated tests that belong to the service which ensure that the service will continue to meet its commitment to each client as the service evolves. They express each client's expectations of the contract between client and service. 
 
 ## Applicability
 
-Multiple consumers, but not too many
+This is most useful in scenarios where there are multiple consumers for a single service. If there is only a single consumer then hopefully the service's contract and the consumer's expectations are near to being the same. This would mean there shouldn't be significant differences between provider driven contract tests and consumer driven contract tests. 
 
-Work better internally to an organisation - requires close collaboration between consumer and service
+I can see this being more practical when consumer and service are both internal to a company or when there are a small number of external consumers with a close relationship with the team. This would not be practical with many external consumers that did not have a relationship with the team and were able to collaborate on building and maintaining the tests. 
 
 ## Challenges
 
-Up to date
+I think the biggest challenge would be keeping the tests up to date, since changes in expectations would generally come from the consumer and could happen at any time without the service provider being aware. This may be mitigated by frameworks like [Pact](https://docs.pact.io/#consumer-driven-contracts) that make it possible to automate the changes between consumers and service.
 
-Tests may be incomplete
+These tests have the same challenges as any other types off test in that they are only as good as the cases they test. It's always a challenge, but it doesn't mean there's not value in automation. You very quickly discover if the tests are no high enough quality when you start to make changes. Issues quickly give you a sense of what is missing. 
 
-Does not test for expectations around non-functional requirements
+Another thing that is a wider issue than consumer driven contract tests is they probably won't give you an idea of non-functional requirements that consumers rely on such as scalability and latency.
 
 ## Related patterns
 
 * Integration tests
-
-## Significant tools
-
-* Pact tests
 
 ## Useful resources
 * A description of the pattern on [Martin Fowler's website](https://martinfowler.com/articles/consumerDrivenContracts.html)
