@@ -49,7 +49,7 @@ It is also particularly important when the producer's code changes regularly or 
 
 ## Related patterns
 
-* Contract tests
+* [Maintaining multiple versions](maiintaining-multiple-versions.md)
 
 ## Useful resources
 * [The SemVer website](https://semver.org/)

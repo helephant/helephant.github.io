@@ -29,7 +29,7 @@ https://stripe.com/gb/blog/api-versioning
 * Supporting multiple versions
 * Deprecating things - sunset period
 * Aggressive obsolescence
-* [Expand contract](api-expand-contract.md)
+* [Expand contract](expand-contract.md)
 * consumer-driven contracts (https://martinfowler.com/articles/consumerDrivenContracts.html)
 * 
 
@@ -48,7 +48,7 @@ https://stripe.com/gb/blog/api-versioning
 
 
 ## Client patterns
-* Tolerant reader/Must ignore
+* [Tolerant reader](tolerant-reader.md)
 * Must forward (http://www.amundsen.com/talks/2017-03-sxsw/2017-03-sxsw-patterns.pdf)
 
 ## Anti-patterns
