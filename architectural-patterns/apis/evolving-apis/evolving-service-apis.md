@@ -1,5 +1,5 @@
 
-You have a problem that forces you to evolve your API, now you have two problems. 
+You have a problem that forces you to evolve your API contract, so you create a new version. Now you have two problems. 
 
 What sort of change break the interface?
 
@@ -30,8 +30,6 @@ https://stripe.com/gb/blog/api-versioning
 * Deprecating things - sunset period
 * Aggressive obsolescence
 * [Expand contract](expand-contract.md)
-* consumer-driven contracts (https://martinfowler.com/articles/consumerDrivenContracts.html)
-* 
 
 ## Ways to 
 * Version in uri - url or resource
@@ -42,12 +40,13 @@ https://stripe.com/gb/blog/api-versioning
 * Schemas
 * [Specification by example](https://www.thoughtworks.com/insights/blog/specification-example)
 * [Consumer-driven contract tests](consumer-driven-contract-tests.md)
-* Pact testing
 * Integration tests
 * Integration contract tests
 
 
 ## Client patterns
+Generally the service provider makes most of the decisions around and bears much of the cost of evolving a contract. Changes can be disruptive for the client particularly if they happen often or if the client is not interested in the new functionality. Here are some patterns for minimizing the client's coupling to a service contract.
+
 * [Tolerant reader](tolerant-reader.md)
 * Must forward (http://www.amundsen.com/talks/2017-03-sxsw/2017-03-sxsw-patterns.pdf)
 
