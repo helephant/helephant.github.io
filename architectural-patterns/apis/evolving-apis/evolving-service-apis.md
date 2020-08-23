@@ -25,9 +25,11 @@ If the API is extended to support both new and old clients, it is important to b
 * [Support all versions forever](https://stripe.com/gb/blog/api-versioning)
 * Planned obsolescence
 
-## Ways to version APIs
+## Declaring versions
 * [Semantic versioning](semantic-versioning.md)
 * [W3C paper on versioning](https://www.w3.org/2001/tag/doc/versioning)
+
+## Allowing a client to request a version
 * Version in uri - url or resource
 * Version in header
 * Content negotiation
