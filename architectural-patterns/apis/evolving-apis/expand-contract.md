@@ -45,12 +45,12 @@ There are some approaches that may or may not help depending on who your clients
 
 ## Applicability
 
-This pattern is useful in many situations where the owner of the API and the client are independently deployable:
+This pattern is useful in many situations where a service and the client that consume it are independently deployable:
 
-* Within a single codebase when refactoring
-* Being able to releasing changes to a data store that an application or service relies on
-* Changing the independently deployable parts of a single service in an iterative way
 * Evolving internal or publically available APIs
+* Changing the independently deployable parts of a single service in an iterative way
+* Being able to releasing changes to a data store that an application or service relies on
+* Within a single codebase when refactoring
 
 ## Challenges
 
