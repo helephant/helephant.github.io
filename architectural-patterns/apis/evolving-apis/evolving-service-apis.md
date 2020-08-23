@@ -16,7 +16,7 @@ The best choices will depend a lot on the context of the system, but here are so
 
 * [Compatible extensions](compatible-extensions.md) - make backwards compatible changes that won't break [tolerant readers](tolerant-reader.md)
 * [Maintaining multiple versions](maintaining-multiple-versions.md) - maintain multiple versions of the API
-* [Breaking changes](breaking-changes.md) - make breaking changes that force clients to upgrade
+* [Breaking changes](breaking-change.md) - make breaking changes that force clients to upgrade
 
 If the API is extended to support both new and old clients, it is important to be explicit about what the long term support is to set the expectations for the client and to allow the team evolving the service to plan. Having multiple ways to access the same functionality can quickly add complexity and make the API difficult to maintain and evolve in the future. 
 
