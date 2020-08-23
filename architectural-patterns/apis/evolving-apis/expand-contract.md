@@ -68,6 +68,7 @@ That said, the value of decoupling the deployment of the service changes and the
 
 ## Related patterns
 
+* [Tolerant reader](tolerant-reader.md) - expand-contract on the service and tolerant reader on the client allow both client and server to adapt to changes quite independently
 * Non-breaking changes
 * [Planned obsolescence](planned-obsolescence.md)
 
