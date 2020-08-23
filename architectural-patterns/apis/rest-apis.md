@@ -1,5 +1,12 @@
 What's REST?
 
+## resoures
+
+* [Zalando RESTful API guidelines](https://opensource.zalando.com/restful-api-guidelines/#api-design-principles)
+* [Build APIs you won't hate](https://leanpub.com/build-apis-you-wont-hate)
+* [Irresistable APIs](https://www.amazon.de/Irresistible-APIs-Designing-that-developers/dp/1617292559)
+* [Thoughts on RESTful API Design](https://restful-api-design.readthedocs.io/en/latest/)
+
 (Roy Fielding's dissertation)[https://www.ics.uci.edu/~fielding/pubs/dissertation/software_arch.htm]
 
 Why build APIs using rest?

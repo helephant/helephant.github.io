@@ -69,7 +69,7 @@ That said, the value of decoupling the deployment of the service changes and the
 ## Related patterns
 
 * Non-breaking changes
-* Aggressive obsolescence
+* [Planned obsolescence](planned-obsolescence.md)
 
 ## Useful resources
 * A description of the pattern on [Martin Fowler's website](https://martinfowler.com/bliki/ParallelChange.html)

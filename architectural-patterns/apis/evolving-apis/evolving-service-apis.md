@@ -28,7 +28,7 @@ https://stripe.com/gb/blog/api-versioning
 * Non-breaking changes - backward and forward compatibility
 * Supporting multiple versions
 * Deprecating things - sunset period
-* Aggressive obsolescence
+* Planned obsolescence
 * [Expand contract](expand-contract.md)
 
 ## Ways to 
@@ -52,5 +52,6 @@ Generally the service provider makes most of the decisions around and bears much
 
 ## Anti-patterns
 
+* Coupling client and service release cycles
 
 https://www.amazon.co.uk/Service-Design-Patterns-Fundamental-Addison-Wesley/dp/032154420X/ref=sr_1_1?crid=NWQANE2YN385&keywords=service+design+patterns&qid=1570786007&sprefix=service+design+pattern%2Caps%2C151&sr=8-1
