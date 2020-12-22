@@ -1,7 +1,12 @@
 
-You have a problem that forces you to evolve your API contract, so you create a new version. Now you have two problems. 
+Change is inevitable. Even the most well-designed contracts between a service and its consumer will need to evolve as the requirements for the system change. There is often a learning process when a service is created and the original design is often based on imperfect knowledge. 
 
-What sort of change break the interface?
+Changing a contract between a service and its consumers becomes progressively more difficult as the number of consumers increases, particularly in systems where there is different ownership between service and consumers. The greater the cost of the change, the less able the service providers are able to respond to the requirements of the business. It is also more likely that change will happen as disruptive and risky large changes, rather than frequent small iterations. 
+
+Frequent changes can also strain relationships between teams, as teams that look after a consuming process must delay other work to accomodate changes to the contract that do not directly benefit them. Consumers that are slow to change can limit the responsiveness of the team that maintains the service when implementing features for other consumers.
+
+
+## What sort of change break the interface?
 
 Here is my toolbox of options in accomodating change in services. 
 

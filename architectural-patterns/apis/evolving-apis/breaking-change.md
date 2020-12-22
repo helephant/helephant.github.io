@@ -24,7 +24,7 @@ Creating a breaking change is not only an option at the time of making a change 
 
 ## Challenges
 
-Down time is usually a big issue in systems, so techniques that allow clients to seamlessly upgrade at a time which is convenient to the client  are usually preferable. 
+Down time is usually a big issue in systems, so techniques that allow clients to seamlessly upgrade at a time which is convenient to the client are usually preferable. 
 
 Even if both service and client are upgraded at the same time, there will likely be a small amount of down time just because neither release will happen instantly. It will be likely that some calls from the client to the old API will be sent to the new API and some of the new requests will be sent to the old API. 
 

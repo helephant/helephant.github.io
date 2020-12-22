@@ -8,12 +8,6 @@ Tolerant reader is a pattern for [evolving APIs](evolving-service-apis.md) that 
 
 ## Motivation
 
-Change is inevitable. Even the most well-designed contracts between a service and its consumer will need to evolve as the requirements for the system change. There is often a learning process when a service is created and the original design is often based on imperfect knowledge. 
-
-Changing a contract between a service and its consumers becomes progressively more difficult as the number of consumers increases, particularly in systems where there is different ownership between service and consumers. The greater the cost of the change, the less able the service providers are able to respond to the requirements of the business. It is also more likely that change will happen as disruptive and risky large changes, rather than frequent small iterations. 
-
-Frequent changes can also strain relationships between teams, as teams that look after a consuming process must delay other work to accomodate changes to the contract that do not directly benefit them. Consumers that are slow to change can limit the responsiveness of the team that maintains the service when implementing features for other consumers.
-
 Most patterns focus on how the service can be designed to accommodate change. This is a pattern where the consumer can reduce the surface area of its dependency on a service and be forward compatible with contract changes that are unknown at the time of integration.
 
 ## Pattern
@@ -66,7 +60,7 @@ There is also a risk that this can mean that consumers can potentially miss chan
 ## Related patterns
 
 * [Expand-contract](expand-contract.md) and tolerant reader work really well together. Expand-contract allows the service to slowly evolve the contract and tolerant reader allows the client to only respond to the changes that it is interested in. 
-* When you have a tolerant reader, a [consumer-driven contract tests](consumer-driven-contract-tests.md) can the service understand the part of the contract that each client requires. 
+* When you have a tolerant reader, a [consumer-driven contract tests](consumer-driven-contract-tests.md) can help the service understand the part of the contract that each client requires. 
 
 ## Useful resources
 
